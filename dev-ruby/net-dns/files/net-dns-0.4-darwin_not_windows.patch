@@ -1,0 +1,6 @@
+--- lib/net/dns/resolver.rb.orig	2008-04-08 09:19:47 -0400
++++ lib/net/dns/resolver.rb		2008-04-08 09:21:00 -0400
+1030c1030
+<         if RUBY_PLATFORM =~ /win/
+---
+>         if RUBY_PLATFORM =~ /win/ and RUBY_PLATFORM !~ /darwin/
